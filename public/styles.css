@@ -1,0 +1,22 @@
+#content {
+    width: 100%;
+}
+#outlook {
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+}
+.temperature {
+    color:red;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.current {
+    font-size: 36pt;
+}
+
+.historical {
+    color: dimgray;
+}

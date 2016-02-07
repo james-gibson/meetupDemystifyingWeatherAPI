@@ -1,0 +1,15 @@
+{
+  "name": "meetup-weather-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Gibson",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "forecast.io": "0.0.9"
+  }
+}
