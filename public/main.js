@@ -18,6 +18,12 @@ function queryForecast(latitude,longitude) {
             console.log(weatherData.message);
             return;
         }
+        console.log(weatherData);
+        var current = weatherData['currently'];
+        var currentTemp = current.temperature;
+        var currentHumidity = current.humidity;
+        var currentDescription = current.summary;
+
     }
 
     function httpGet(url, callback)
