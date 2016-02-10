@@ -24,6 +24,9 @@ function queryForecast(latitude,longitude) {
         var currentHumidity = current.humidity;
         var currentDescription = current.summary;
 
+        $('.temperature.current').html(currentTemp);
+        $('.colloquial.current').html(currentDescription);
+        $('.humidity.current').html(currentHumidity);
     }
 
     function httpGet(url, callback)
