@@ -14,6 +14,10 @@ function queryForecast(latitude,longitude) {
 
 
     function updateUI(weatherData) {
+        if(weatherData.error){
+            console.log(weatherData.message);
+            return;
+        }
     }
 
     function httpGet(url, callback)
