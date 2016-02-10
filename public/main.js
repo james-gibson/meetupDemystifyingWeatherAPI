@@ -7,4 +7,15 @@
 })();
 
 function queryForecast(latitude,longitude) {
+    function httpGet(url, callback)
+    {
+        console.log(url);
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(JSON.parse(xmlHttp.responseText));
+        }
+        xmlHttp.open("GET", url, true); // true for asynchronous
+        xmlHttp.send(null);
+    }
 }
