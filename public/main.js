@@ -7,6 +7,12 @@
 })();
 
 function queryForecast(latitude,longitude) {
+
+    var apiUrl = 'http://localhost:3000/forecast?latitude=' + latitude + '&longitude=' + longitude;
+
+    httpGet(apiUrl, updateUI);
+
+
     function updateUI(weatherData) {
     }
 
