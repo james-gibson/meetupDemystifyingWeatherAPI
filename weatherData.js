@@ -1,4 +1,3 @@
-var express = require('express');
 var Forecast = require('forecast.io');
 
 var options = {
@@ -14,15 +13,24 @@ function getForecast(req, res) {
 
     if(!latitude || !longitude) {
         res.status = 400;
-        res.send('Invalid query parameters');
+        var response = {};
+        response.error = 'Whoops, we seem to have run into an issue';
+        res.json(response);
         return;
     }
 
-    var p = queryForecast(latitude, longitude);
+    var queryPromise = queryForecast(latitude, longitude);
 
-    p.then(function(forecastResult) {
-        res.send(forecastResult);
+    queryPromise.then(function(forecastResult) {
+        res.json(forecastResult);
     })
+
+    queryPromise.catch(function(reason) {
+        var response = {};
+        response.error = 'Whoops, we seem to have run into an issue';
+        response.message = reason;
+        res.json(response);
+    });
 };
 
 function queryForecast(latitude, longitude) {
