@@ -10,9 +10,17 @@ body {
 div {
     display: inline-block;
     width: 30%;
+    min-width: 200px;
     margin: 20px;
     background-color: rgba(240, 240, 240, .4);
     border-radius: 20px;
+    max-height: 200px;
+    float:left;
+}
+
+
+div.inline {
+    height: 100%;
 }
 
 h3 {
@@ -20,16 +28,24 @@ h3 {
     color: #28262C;
 }
 
-#current {
-    color: #FF101F;
+.current {
+    color: slategrey;
+}
+
+.current .colloquial {
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.humidity::after {
+    content: "%";
+}
+
+.temperature::after {
+    content: "°F";
 }
 
 h4 {
     font-size: 20px;
-}
-
-.colloquial {
-    width: 90%;
-    height: 200px;
-    margin: auto;
 }
