@@ -7,6 +7,9 @@
 })();
 
 function queryForecast(latitude,longitude) {
+    function updateUI(weatherData) {
+    }
+
     function httpGet(url, callback)
     {
         console.log(url);
