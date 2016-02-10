@@ -4,7 +4,7 @@ body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     background-size: cover;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAACBUlEQVQoUz2Ta2vUUBCGn5lzSbKJ1UpFEBHFX91+sN3S27It+ONkb8k5I3NWXMgm5MzlfWeeyK/HByulIoCZIRiigVIWVPytYpgfthgRBSuMfUJu7tZmClINEfmXIJRaWjD+3x7O54iitfLz+2fk+vbOTLz++efnZucciqvwgpyLiuDBOQV+fL1Cru9uzURIGsgxUJbiIhEqISi1FPouMQ4diDEXiKp8+3KF3KzvW+chBfoUCUEQM1KMxKyoKuOqZ+hzs2a1cjGNfLiYkJv7tXlgl5QuRlarzKfLiRiUpVaW6jqMcRgIAjlmptX5WW5fnswnl6ISYmIaEpfvVk3q8XDiz/5AscrQddTW2Vh1mWkYkPXm2fociNGvyNhHovqAlJQj81w4LUuzkUJkWRZwK11Gnl43pj5RDaQU+Ph+hVhld5jbwKi1ec45cjwujYVihaABeXzdWIrBbbXu49gxDR27w6nhMQ2ZYejbqo7zzG5/5HCc0ZiQze9X8+U3ltR9By7GjloqQ3apgome6VNlt99zPBX3hTy/bU29MxBEmlS/vKsP0ZMcDm9QSkF9lQ1iQ57etmZeBSOqNFCc32Up/5F0RS7N1+do+7cQPOdhuzGX4J58dx7gw6vVk890+82Dk6tKrsDOhR63L81z30X6HDn5apxBL6b/ZGPNSueYdpF5WRpQfwHh3tQ1R4tcqAAAAABJRU5ErkJggg==");
+    background-image: url("Blur-1.png");
 }
 
 div {
@@ -18,9 +18,15 @@ div {
     float:left;
 }
 
+h1 {
+    margin-top: 30px;
+    color: #183E5C;
+    font-size: 36px;
+}
 
 div.inline {
     height: 100%;
+    padding-top: 30px;
 }
 
 h3 {
