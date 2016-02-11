@@ -11,7 +11,7 @@ This guide assumes that you have Node.js installed on your computer, if you do n
 
 #### Getting started
 
-These days weather data seems to be everywhere, and in some regards it is everywhere.  I have chosen to introduce weather api's to you by focusing on a fairly unique product in the weather data market, Forecast.io.  This weather site aggrigates through statistics multiple weather sources to provide hyper-local forecasts based on your location.
+These days weather data seems to be everywhere, and in some regards it is everywhere.  I have chosen to introduce weather apis to you by focusing on a fairly unique product in the weather data market, Forecast.io.  This weather site aggregates through statistics multiple weather sources to provide hyper-local forecasts based on your location.
 
 ![forecast.io](./images/forecastIO.jpg)
 
